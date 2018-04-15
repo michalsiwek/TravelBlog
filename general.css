@@ -1,0 +1,135 @@
+@import url("colors.css");
+body
+{
+    background-color: #151d2b;
+    color: #cccccc;
+    font-family: 'Nunito', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+#logo
+{
+    text-align: center;
+    color: #cccccc;
+    font-size: 48px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+#topnav
+{
+    background-color: #1c74b2;
+	text-align: center;
+}
+.menu
+{
+    padding: 0;
+}
+.menu li
+{
+    display: inline-block;
+    width: 180px;
+    border-right: 1px solid #0a5290;
+    cursor: pointer;
+    padding: 0px;
+}
+.menu li:hover
+{
+    background-color: #0a5290;
+}
+.menu li:first-child
+{
+    border-left: 1px solid #0a5290;
+}
+.menu a
+{
+    font-size: 20px;
+    color: #cccccc;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+.paragraph
+{
+    max-width: 900px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 30px;
+}
+.paragraph h2
+{
+    margin-bottom: 40px;
+}
+.article-header
+{
+    color: #1c74b2;
+    display: flex;
+    align-content: center;
+    line-height: 0;
+}
+.article-header::before,
+.article-header::after
+{
+    content: '';
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 5px;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+footer
+{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: #aaaaaa;
+    background-color: #151d2b;
+}
+footer > h
+{
+    font-size: 10px;
+    letter-spacing: 5px;
+    padding: 10px;
+}
+.socials
+{
+	width: 100%;
+	text-align: center;
+    background-color: #222222;
+}
+.socialdivs
+{
+	margin: auto;
+}
+.social-button
+{
+	width: 240px;
+	display: inline-block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    cursor: pointer;
+}
+#fb-bt:hover
+{
+	background-color: #4668b3;
+    color: #eeeeee;
+}
+#yt-bt:hover
+{
+	background-color: #d94348;
+    color: #eeeeee;
+}
+#tt-bt:hover
+{
+	background-color: #3095d3;
+    color: #eeeeee;
+}
+#gplus-bt:hover
+{
+	background-color: #d95333;
+    color: #eeeeee;
+}
