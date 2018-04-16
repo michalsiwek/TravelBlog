@@ -25,13 +25,13 @@
     transition: all 0.3s linear;
      -webkit-backface-visibility: hidden;
 }
-.continent:hover > img
+.continent a:hover > img
 { 
     -ms-transform: scale(1.05) translateZ(0); /* IE 9 */
     -webkit-transform: scale(1.05) translateZ(0); /* Chrome, Safari, Opera */
     transform: scale(1.05) translateZ(0);
 }
-.continent:hover > figcaption
+.continent a:hover > figcaption
 {
     opacity: 0;
 }
@@ -98,11 +98,17 @@ h3
 {
     padding: 10px 30px 10px 30px;
 }
-.entry:hover
+.entry a
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.entry a:hover
 {
     background-color: #191919;
 }
-.entry:hover .img-container img
+.entry a:hover .img-container img
 {
     opacity: 1;
     -ms-transform: scale(1.01) translateZ(0); /* IE 9 */

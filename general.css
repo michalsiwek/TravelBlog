@@ -1,4 +1,3 @@
-@import url("colors.css");
 body
 {
     background-color: #151d2b;
@@ -7,6 +6,11 @@ body
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
+}
+a
+{
+    text-decoration: none;
+    color: #cccccc;
 }
 
 #logo
@@ -104,6 +108,7 @@ footer > h
 .socialdivs
 {
 	margin: auto;
+    font-size: 0;
 }
 .social-button
 {
@@ -112,10 +117,22 @@ footer > h
     padding-top: 25px;
     padding-bottom: 25px;
     cursor: pointer;
+    transition: all 0.3s linear;
+}
+.social-button a
+{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 #fb-bt:hover
 {
 	background-color: #4668b3;
+    color: #eeeeee;
+}
+#insta-bt:hover
+{
+	background-color: #cc3771;
     color: #eeeeee;
 }
 #yt-bt:hover
@@ -126,10 +143,5 @@ footer > h
 #tt-bt:hover
 {
 	background-color: #3095d3;
-    color: #eeeeee;
-}
-#gplus-bt:hover
-{
-	background-color: #d95333;
     color: #eeeeee;
 }
