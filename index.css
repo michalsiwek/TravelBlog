@@ -137,16 +137,26 @@ h3
 }
 #msg-button
 {
+    display: block;
     background-color: #1c74b2;
     width: 240px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 40px auto 10px auto;
-    text-align: center;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 40px auto 20px auto;
+    color: #cccccc;
+    transition: background-color 0.5s, width 0.5s; 
 }
+
 #msg-button:hover
+{ 
+    background-color: #095291;
+    width: 100%;
+}
+
+#msg-button:focus
 {
-    background-color: #0a63a1;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
 }

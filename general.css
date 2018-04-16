@@ -12,7 +12,15 @@ a
     text-decoration: none;
     color: #cccccc;
 }
-
+button
+{
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    border: none;
+	letter-spacing: 1px;
+	outline: none;
+    border-radius: 5px;
+}
 #logo
 {
     text-align: center;
@@ -117,7 +125,7 @@ footer > h
     padding-top: 25px;
     padding-bottom: 25px;
     cursor: pointer;
-    transition: all 0.3s linear;
+    transition: all 0.2s linear;
 }
 .social-button a
 {

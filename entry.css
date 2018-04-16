@@ -25,6 +25,17 @@
     font-size: 14px;
 }
 
+.entry-main-img img
+{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.entry-img img
+{
+    width:100%;
+}
+
 #comments
 {
     margin-top: 30px;
