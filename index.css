@@ -151,7 +151,7 @@ h3
 #msg-button:hover
 { 
     background-color: #095291;
-    width: 100%;
+    width: 280px;
 }
 
 #msg-button:focus

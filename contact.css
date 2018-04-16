@@ -91,7 +91,7 @@ h4
 #send-button:hover
 { 
     background-color: #095291;
-    width: 100%;
+    width: 340px;
 }
 
 #send-button:focus
