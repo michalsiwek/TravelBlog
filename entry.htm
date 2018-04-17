@@ -38,7 +38,15 @@
     </header>
     
     <div id="container">
+        <aside>
+            <div class="aside-content">
+                <div class="aside-ad-box">
+                    <img src="img/ad.jpg">
+                </div>
+            </div>
+        </aside>
         <main id="entry-main">
+            <div id="scrollup" class="icon-angle-circled-up"></div>
             <article>
                 <div id="content">
                     <header>
@@ -139,19 +147,8 @@
         
         <aside>
             
-            <div id="aside-content">
+            <div class="aside-content">
                 <nav>
-                    <h2>Europa</h2>
-                    <ul>
-                        <li>Anglia (12)</li>
-                        <li>Austria (15)</li>
-                        <li>Belgia (22)</li>
-                        <li>Francja (9)</li>
-                        <li>Hiszpania (6)</li>
-                        <li>Niemcy (13)</li>
-                        <li>Portugalia (8)</li>
-                        <li>Włochy (11)</li>
-                    </ul>
                     <h2>Kontynenty</h2>
                     <ul>
                         <li>Europa (41)</li>
@@ -159,23 +156,8 @@
                         <li>Ameryka Płd. (23)</li>
                         <li>Azja i Oceania (11)</li>
                     </ul>
-                    <h2>Archiwum</h2>
-                    <ul>
-						<li>Styczeń (8)</li>
-						<li>Luty (6)</li>
-						<li>Marzec (7)</li>
-						<li>Kwiecień (9)</li>
-						<li>Maj (9)</li>
-						<li>Czerwiec (10)</li>
-						<li>Lipiec (11)</li>
-						<li>Sierpień (9)</li>
-						<li>Wrzesień (8)</li>
-						<li>Październik (9)</li>
-						<li>Listopad (6)</li>
-						<li>Grudzień (10)</li>
-					</ul>
                 </nav>
-                <div id="aside-ad-box">
+                <div class="aside-ad-box">
                     <img src="img/ad.jpg">
                 </div>
             </div>
@@ -212,7 +194,23 @@
         </div>
         <h>Travel Blog &copy; All Rights Reserved 2018</h>
     </footer>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>        
+    <script src="jquery.scrollTo.min.js"></script>	
+    <script>
+        jQuery(function($)
+        {
+            $.scrollTo(0);
+            $('#scrollup').click(function() { $.scrollTo($('body'), 1000); });
+        }
+        );
+            
+        $(window).scroll(function()
+        {
+            if($(this).scrollTop()>800) $('#scrollup').fadeIn();
+            else $('#scrollup').fadeOut();
+        }
+        );
+    </script>
 </body>
     
 </html>
