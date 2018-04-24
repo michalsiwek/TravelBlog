@@ -36,7 +36,8 @@ button
 }
 .menu
 {
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
 }
 .menu li
 {
@@ -140,7 +141,7 @@ footer > h
 }
 #insta-bt:hover
 {
-	background-color: #cc3771;
+	background-color: #ff7373;
     color: #eeeeee;
 }
 #yt-bt:hover
