@@ -39,9 +39,15 @@
         <div id="title-bar-sticky">// Gallery title //</div>
     </header>
     <main>
+        <div id="foto-preview">
+            <div id="foto-prev"></div>
+            <div id="foto"></div>
+            <div id="foto-next"></div>
+            <div id="close-preview"></div>
+        </div>
         <div id="gallery-container">
             <div class="gallery-item">
-                <div class="img-container">
+                <div class="img-container" id="asd">
                     <img src="img/palawan.jpg" alt="gallery-main-img"/>
                 </div>
             </div>
@@ -251,7 +257,7 @@
         </div>
         <h>ParaDiceDev &copy; All Rights Reserved 2018</h>
     </footer>    
-    <script>
+    <script type="text/javascript">
         window.onscroll = function() {myFunction()};
         var titlebar = document.getElementById("title-bar");
         var sticky = titlebar.offsetTop;
@@ -264,7 +270,20 @@
                 titlebar.classList.remove("sticky-title");
             }
         }
-    </script>    
+    </script>
+    <script type="text/javascript">
+        function fotoPreview() {
+            document.getElementById("foto-preview").style.display = "block";
+        }
+        function closeFotoPreview() {
+            document.getElementById("foto-preview").style.display = "none";
+        }
+        var fotos = document.getElementsByClassName("img-container");
+        for(var i in fotos) {
+            fotos[i].onclick = fotoPreview;
+        }
+        document.getElementById("close-preview").onclick = closeFotoPreview;              
+    </script>
 </body>
     
 </html>
