@@ -27,9 +27,9 @@
 }
 .continent a:hover > img
 { 
-    -ms-transform: scale(1.05) translateZ(0); /* IE 9 */
-    -webkit-transform: scale(1.05) translateZ(0); /* Chrome, Safari, Opera */
-    transform: scale(1.05) translateZ(0);
+    -ms-transform: scale(1.01) translateZ(0); /* IE 9 */
+    -webkit-transform: scale(1.01) translateZ(0); /* Chrome, Safari, Opera */
+    transform: scale(1.01) translateZ(0);
 }
 .continent a:hover > figcaption
 {
@@ -144,7 +144,7 @@ h3
     font-size: 16px;
     margin: 40px auto 20px auto;
     color: #cccccc;
-    transition: background-color 0.5s, width 0.5s; 
+    transition: all 0.5s linear; 
 }
 
 #msg-button:hover

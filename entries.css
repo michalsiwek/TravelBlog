@@ -11,6 +11,7 @@
     display: block;
     text-align: justify;
     width: 750px;
+    margin-top: 20px;
 }
 
 #scrollup
@@ -64,23 +65,4 @@
 .entry-img img
 {
     width:100%;
-}
-
-aside
-{
-    display: block;
-    margin: 0 30px 0 30px;
-}
-.aside-content h2
-{
-    color: #1c74b2;
-}
-.aside-content ul
-{
-    padding-left: 20px;
-    font-size: 14px;
-}
-.aside-ad-box
-{
-    margin-top: 30px;
 }

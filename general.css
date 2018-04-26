@@ -93,7 +93,71 @@ button
     flex-grow: 1;
     margin: 0 20px;
 }
-
+/* STICKY TITLE BAR */
+#title-bar, #title-bar-sticky
+{
+    background-image: url("img/diagmonds_2x.png");
+    padding: 10px;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 20px;
+}
+#title-bar span
+{
+    letter-spacing: 0;
+}
+#title-bar-sticky
+{
+    display: none;
+}
+.sticky-title
+{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+/* ASIDES */
+aside
+{
+    display: block;
+    margin: 0 30px 0 30px;
+}
+.aside-content h2
+{
+    color: #1c74b2;
+    text-align: center;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.aside-continent:first-of-type
+{
+    border-top: 1px #1c74b2 solid;
+}
+.aside-continent a
+{
+    max-width: 100%;;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    border-bottom: 1px #1c74b2 solid;
+}
+.aside-continent a:hover
+{
+    background-color: #1c74b2;
+    cursor: pointer;
+}
+.aside-ad-box
+{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+/* FOOTER */
 footer
 {
     display: flex;
@@ -126,7 +190,6 @@ footer > h
     padding-top: 25px;
     padding-bottom: 25px;
     cursor: pointer;
-    transition: all 0.2s linear;
 }
 .social-button a
 {
@@ -141,7 +204,7 @@ footer > h
 }
 #insta-bt:hover
 {
-	background-color: #ff7373;
+    background-image: url("img/insta-bcg.jpg");
     color: #eeeeee;
 }
 #yt-bt:hover
