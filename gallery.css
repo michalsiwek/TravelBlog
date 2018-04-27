@@ -69,7 +69,6 @@
 {
     vertical-align: middle;
     max-width: 90%;
-    min-width: 600px;
     -webkit-backface-visibility: hidden;
 }
 #close-preview
@@ -110,12 +109,14 @@
 .img-container
 {
     width: 300px;
+    height: 200px;
     overflow: hidden;
 }
 .img-container img
 {
-    height: 200px;
-    width: auto;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
     opacity: 0.9;
     transition: all 0.3s linear;
     -webkit-backface-visibility: hidden;
