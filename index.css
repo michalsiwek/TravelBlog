@@ -23,7 +23,7 @@
     min-width: 100%;
     min-height: 100%;
     transition: all 0.3s linear;
-     -webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .continent a:hover > img
 { 

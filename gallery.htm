@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pl">
     
 <head>
@@ -40,14 +40,18 @@
     </header>
     <main>
         <div id="foto-preview">
-            <div id="foto-prev"></div>
-            <div id="foto"></div>
-            <div id="foto-next"></div>
-            <div id="close-preview"></div>
+            <div id="wrapper">
+                <div id="foto-prev"><p>prev</p></div>
+                <div id="foto-container">
+                    <img id="foto" src="" alt="gallery-foto"/>
+                </div>
+                <div id="foto-next"><p>next</p></div>
+                <div id="close-preview">exit</div>
+            </div>
         </div>
         <div id="gallery-container">
             <div class="gallery-item">
-                <div class="img-container" id="asd">
+                <div class="img-container">
                     <img src="img/palawan.jpg" alt="gallery-main-img"/>
                 </div>
             </div>
@@ -256,7 +260,8 @@
             </div>
         </div>
         <h>ParaDiceDev &copy; All Rights Reserved 2018</h>
-    </footer>    
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script type="text/javascript">
         window.onscroll = function() {myFunction()};
         var titlebar = document.getElementById("title-bar");
@@ -272,17 +277,26 @@
         }
     </script>
     <script type="text/javascript">
-        function fotoPreview() {
+        var pictHeight = window.outerHeight;        
+        function fotoPreview(src) {
             document.getElementById("foto-preview").style.display = "block";
+            document.getElementById("wrapper").style = "height: " + pictHeight.toString() + "px;";
+            $('#foto').attr('src', src);
         }
         function closeFotoPreview() {
             document.getElementById("foto-preview").style.display = "none";
         }
-        var fotos = document.getElementsByClassName("img-container");
-        for(var i in fotos) {
-            fotos[i].onclick = fotoPreview;
-        }
-        document.getElementById("close-preview").onclick = closeFotoPreview;              
+        $('.img-container').click(function(event) {
+                var src = $(this).find('img').attr('src');
+                fotoPreview(src);
+            });
+        // window resize handler
+        document.getElementById("close-preview").onclick = closeFotoPreview;
+        $(window).on("resize", function() {
+            pictHeight = $(window).height();
+            $('#wrapper').height(pictHeight);
+        });
+        $(window).trigger('resize');
     </script>
 </body>
     
