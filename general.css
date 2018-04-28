@@ -121,6 +121,34 @@ button
     left: 0;
     right: 0;
 }
+
+/* PAGE PAGINATION */
+.pagination
+{
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.pagination a
+{
+    color: #cccccc;
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+.pagination a.active-page
+{
+    background-color: #cccccc;
+    color: #111111;
+    font-weight: bold;
+}
+.pagination a:hover:not(.active-page) 
+{
+    background-color: #cccccc;
+    color: #151d2b;
+}
+
 /* ASIDES */
 aside
 {
