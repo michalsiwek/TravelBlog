@@ -96,6 +96,7 @@ button
 /* STICKY TITLE BAR */
 #title-bar, #title-bar-sticky
 {
+    /* Background pattern from Toptal Subtle Patterns */
     background-image: url("img/diagmonds_2x.png");
     padding: 10px;
     text-align: center;
