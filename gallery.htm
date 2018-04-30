@@ -261,66 +261,9 @@
         </div>
         <h>ParaDiceDev &copy; All Rights Reserved 2018</h>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script type="text/javascript">
-        window.onscroll = function() {myFunction()};
-        var titlebar = document.getElementById("title-bar");
-        var sticky = titlebar.offsetTop;
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                titlebar.classList.add("sticky-title");
-                document.getElementById("title-bar-sticky").style.display = "block";
-            } else {
-                document.getElementById("title-bar-sticky").style.display = "none";
-                titlebar.classList.remove("sticky-title");
-            }
-        }
-    </script>
-    <script type="text/javascript">
-        var pictHeight = window.outerHeight;
-        var fotoIndex = 0;
-        // foto preview
-        function fotoPreview(src) {
-            document.getElementById("foto-preview").style.display = "block";
-            document.getElementById("wrapper").style = "height: " + pictHeight.toString() + "px;";
-            $('#foto').attr('src', src);
-        }
-        // close foto preview
-        function closeFotoPreview() {
-            document.getElementById("foto-preview").style.display = "none";
-        }
-        // load proper foto
-        $('.img-container').click(function(event) {
-                var src = $(this).find('img').attr('src');
-                fotoIndex = parseInt($(this).find('img').attr('img-id'));
-                fotoPreview(src);
-            });
-        // slider
-        function showPic(index) {
-            if(index > 0 && fotoIndex < $('.img-container').size()) {
-                fotoIndex += index;
-            } else if (index < 0 && fotoIndex > 1) {
-                fotoIndex += index;
-            }
-            var src = $('.img-container').find('img').eq(fotoIndex - 1).attr("src");
-            $('#foto').attr('src', src);
-        }
-        
-        $('#foto-prev').click(function () {
-            showPic(-1);
-        });
-        $('#foto-next').click(function () {
-            showPic(1);
-        });
-        
-        // window resize handler
-        document.getElementById("close-preview").onclick = closeFotoPreview;
-        $(window).on("resize", function() {
-            pictHeight = $(window).height();
-            $('#wrapper').height(pictHeight);
-        });
-        $(window).trigger('resize');
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+    <script src="scripts/stickyTitleBar.js"></script>  
+    <script src="scripts/fotoPreview.js"></script>  
 </body>
     
 </html>

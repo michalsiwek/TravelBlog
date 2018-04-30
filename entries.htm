@@ -284,23 +284,8 @@
         <h>ParaDiceDev &copy; All Rights Reserved 2018</h>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>       
-    <script src="jquery.scrollTo.min.js"></script>	
-    <script>
-        
-        jQuery(function($)
-        {
-            $.scrollTo(0);
-            $('#scrollup').click(function() { $.scrollTo($('body'), 1000); });
-        }
-        );
-            
-        $(window).scroll(function()
-        {
-            if($(this).scrollTop()>750) $('#scrollup').fadeIn();
-            else $('#scrollup').fadeOut();
-        });
-        
-    </script>
+    <script src="scripts/jquery.scrollTo.min.js"></script>	
+    <script src="scripts/scrollUp.js"></script>	
 </body>
     
 </html>
