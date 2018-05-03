@@ -58,9 +58,6 @@
     margin-bottom: 20px;
     background-color: #262e3e;
     padding: 30px;
-}
-#comments
-{
     margin-left: auto;
     margin-right: auto;
     background-color: #333333;
@@ -69,26 +66,11 @@
     border-radius: 15px;
     font-size: 15px;
 }
-.comment
+#comments a
 {
-    padding: 10px;
+    color: #1c74b2;
 }
-.comment-header h3
+#comments h2
 {
-    text-align: left;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-.comment-content
-{
-    display: inline-flex;
-}
-.avatar
-{
-    padding-right: 20px;
-}
-.comment-txt p
-{
-    text-align: justify;
-    margin: 0;
+    margin-bottom: 30px;
 }
